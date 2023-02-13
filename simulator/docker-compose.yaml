@@ -3,6 +3,7 @@ services:
   app:
     build: .
     container_name: simulator
+    command: sh -c "go run main.go"
     networks:
       - fullcycle
     volumes:
